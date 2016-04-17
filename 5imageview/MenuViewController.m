@@ -95,7 +95,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [delegate menuDidSelected:indexPath.row];
+    [delegate menuDidSelected:(int)indexPath.row];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
